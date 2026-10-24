@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visit Taniti | Plan Your Island Trip</title>
+<style>
+:root{--ink:#173b45;--sea:#167d87;--light:#e9f6f4;--sand:#fff8ea}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;background:#fff}
+header{background:var(--ink);color:white;padding:14px max(20px,calc((100vw - 1050px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+header strong{font-size:22px}
+nav{display:flex;flex-wrap:wrap;gap:6px}
+nav a{color:white;text-decoration:none;padding:8px 12px;border-radius:6px}
+nav a:hover,nav a:focus{background:#346a70}
+main{max-width:1050px;margin:auto;padding:26px 20px 70px}
+section{display:none}
+section:target{display:block}
+body:not(:has(section:target)) #home{display:block}
+h1{font-size:clamp(30px,5vw,50px);line-height:1.15}
+h2{font-size:32px}
+h3{margin-bottom:4px}
+.hero{background:linear-gradient(135deg,#d3f2e9,#fef0c8);padding:45px 30px;border-radius:16px}
+.lead{font-size:20px;max-width:750px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:26px 0}
+.card{display:block;background:var(--light);border:1px solid #b5d7d2;border-radius:12px;padding:22px;text-decoration:none;color:var(--ink)}
+.card:hover,.card:focus{outline:3px solid var(--sea)}
+.card strong{display:block;font-size:21px}
+.button{display:inline-block;background:var(--sea);color:white;padding:11px 18px;border-radius:7px;text-decoration:none;font-weight:700;margin:10px 8px 10px 0}
+.button:hover{background:#095c66}
+.info{background:var(--sand);border-left:5px solid #d4a74e;padding:16px 20px;margin:20px 0}
+.breadcrumb{display:inline-block;margin:10px 0;color:var(--sea)}
+footer{background:#edf3f3;padding:25px;text-align:center}
+a{color:#075e6a}
+ul{padding-left:22px}
+@media(max-width:650px){
+header{align-items:flex-start}
+nav{width:100%}
+nav a{padding:6px 9px;font-size:14px}
+.cards{grid-template-columns:1fr}
+.hero{padding:25px 20px}
+main{padding:16px 16px 50px}
+}
+</style>
+</head>
+<body>
+<header>
+<strong>🌴 TANITI TOURISM</strong>
+<nav aria-label="Main navigation">
+<a href="#home">Home</a>
+<a href="#activities">Things to Do</a>
+<a href="#stay">Places to Stay</a>
+<a href="#transport">Getting Around</a>
+<a href="#visitor">Visitor Info</a>
+</nav>
+</header>
+<main>
+<section id="home">
+<div class="hero">
+<h1>Discover Taniti</h1>
+<p class="lead">Beaches, rainforest adventures, a volcano, and an unforgettable island getaway.</p>
+<a class="button" href="#activities">Explore Activities</a>
+</div>
+<h2>Plan your visit</h2>
+<div class="cards">
+<a class="card" href="#activities"><strong>Things to Do →</strong>Volcano, snorkeling, beaches and more</a>
+<a class="card" href="#stay"><strong>Places to Stay →</strong>Hotels, resorts and guest accommodations</a>
+<a class="card" href="#transport"><strong>Getting Around →</strong>Buses, taxis, rental cars and bikes</a>
+<a class="card" href="#visitor"><strong>Visitor Information →</strong>Currency, safety, language and travel essentials</a>
+</div>
+</section>
+<section id="activities">
+<a class="breadcrumb" href="#home">← Home</a>
+<h1>Things to Do</h1>
+<p>Explore Taniti's beaches, rainforest, volcano, and outdoor activities.</p>
+<div class="cards">
+<a class="card" href="#volcano"><strong>Visit the Volcano →</strong>Learn about one of Taniti's most popular sights</a>
+<a class="card" href="#snorkeling"><strong>Go Snorkeling →</strong>Discover an ocean adventure</a>
+<div class="card"><strong>Beaches and Rainforest</strong>Relax on sandy beaches or explore the rainforest.</div>
+<div class="card"><strong>Other Attractions</strong>History museum, fishing tours, zip-lining, art galleries and more.</div>
+</div>
+</section>
+<section id="volcano">
+<a class="breadcrumb" href="#activities">← Things to Do</a>
+<h1>Visit Taniti's Volcano</h1>
+<p>Taniti has a small, active volcano in its mountainous interior. Visiting the volcano is a popular sightseeing activity.</p>
+<div class="info"><strong>Planning note:</strong> Ask local tour operators about current access, conditions and guided tour options. This prototype does not provide live bookings.</div>
+<a class="button" href="#activities">More Activities</a>
+</section>
+<section id="snorkeling">
+<a class="breadcrumb" href="#activities">← Things to Do</a>
+<h1>Snorkeling on Taniti</h1>
+<p>Snorkeling is one of the recreational activities available on Taniti. Visitors can explore this option alongside the island's beaches and other outdoor attractions.</p>
+<div class="info">Contact a local activity provider for equipment, schedules, availability and booking details. Provider listings are not included in the supplied island guide.</div>
+<a class="button" href="#activities">More Activities</a>
+</section>
+<section id="stay">
+<a class="breadcrumb" href="#home">← Home</a>
+<h1>Places to Stay</h1>
+<p>Taniti offers a range of accommodations, from an inexpensive hostel to a four-star resort, plus family-owned hotels and bed-and-breakfasts.</p>
+<div class="cards">
+<div class="card"><strong>Hotels and Resort</strong>Compare types of lodging to suit your trip.</div>
+<div class="card"><strong>Bed-and-Breakfasts</strong>Consider a smaller, locally operated stay.</div>
+</div>
+<div class="info"><strong>Booking information:</strong> The island guide does not list individual properties or booking URLs. Contact your chosen hotel or lodging provider directly to confirm rates, availability and reservations. No live booking service is connected to this demonstration.</div>
+</section>
+<section id="transport">
+<a class="breadcrumb" href="#home">← Home</a>
+<h1>Getting Around</h1>
+<h2>Public buses in Taniti City</h2>
+<p>Public buses serve Taniti City every day from <strong>5:00 a.m. to 11:00 p.m.</strong> Private buses serve other parts of the island.</p>
+<h2>Other options</h2>
+<ul>
+<li>Taxis are available in Taniti City.</li>
+<li>Rental cars are available from an agency near the airport.</li>
+<li>Bicycles and helmets are available to rent; helmets are required by law.</li>
+<li>Taniti City and Merriton Landing are walkable areas.</li>
+</ul>
+</section>
+<section id="visitor">
+<a class="breadcrumb" href="#home">← Home</a>
+<h1>Visitor Information</h1>
+<div class="cards">
+<div class="card"><strong>Currency</strong>Taniti uses the <strong>U.S. dollar</strong>. Many businesses also accept euros and yen, and many accept major credit cards.</div>
+<div class="card"><strong>Power</strong>Electrical outlets are 120 volts, as in the United States.</div>
+<div class="card"><strong>Language</strong>Many younger Tanitians speak fluent English; less English is spoken in rural areas.</div>
+<div class="card"><strong>Healthcare and Safety</strong>Taniti has one hospital and several clinics. Violent crime is rare, though petty theft occurs.</div>
+</div>
+<p>Some attractions and restaurants close on national holidays, so plan ahead.</p>
+</section>
+</main>
+<footer>Taniti Tourism • Student UX prototype • Informational demonstration, not an official tourism or booking website</footer>
+</body>
+</html>
